@@ -9,4 +9,5 @@ import * as moment from 'moment';
 
 export class BindingComponent {
   now = moment().format('YYYY-MM-DD');
+  current = new Date()
 }

@@ -4,9 +4,9 @@
   </h1>
 </div>
 <h2>
-  第一個Binding
+  第一個Binding : Today: {{ current | date: "yyyy-MM-dd hh:mm:ss a" }}
 </h2>
-<label>Today:
+<label>
   <input [(ngModel)]="now" type="date">
 </label>
 <br/>
