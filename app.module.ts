@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
 
+// Third-party
+
 import { AppComponent } from './app.component';
 import { StockComponent } from './stockModule/stock.component'
 import { BindingComponent } from './bindingModule/binding.component'

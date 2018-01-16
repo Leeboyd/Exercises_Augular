@@ -1,4 +1,5 @@
 import { Pipe, PipeTransform } from '@angular/core';
+import * as moment from 'moment';
 
 @Pipe({
   name: 'dateFormatter'
@@ -6,7 +7,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class DateFormatterPipe implements PipeTransform {
 
   transform(value: any, args?: any): any {
-    return null;
+    return moment(value).fromNow();
   }
 
 }

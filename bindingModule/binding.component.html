@@ -4,10 +4,10 @@
   </h1>
 </div>
 <h2>
-  第一個字大寫
+  第一個Binding
 </h2>
-<label name="fName">First Name:
-  <input [(ngModel)]="firstName" type="text">
+<label>Today:
+  <input [(ngModel)]="now" type="date">
 </label>
 <br/>
-<label for="fNameCapitalized">Format: {{ firstName }}</label>
+<label>Format: {{ now | dateFormatter }}</label>
