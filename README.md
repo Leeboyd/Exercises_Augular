@@ -40,9 +40,8 @@ Angular-realworld-example-app: Medium clone built with Angular 5+ [1263 stars on
 * Flex-layout (v.2.0): Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API [2074 stars on Github]. Courtesy of Thomas 
 
 ## 疑難雜症
-* 相對路徑設定
-[stackoverflow - Avoiding relative paths in Angular CLI
-](https://stackoverflow.com/questions/41460810/avoiding-relative-paths-in-angular-cli)
+* [問題彙整](https://hackmd.io/s/r1SqhB3Vz) 
+
 
 ## 古早教學
 * Will保哥簡介 Angular 2 Blog
