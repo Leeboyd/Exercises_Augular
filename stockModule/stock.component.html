@@ -1,5 +1,5 @@
 <h1>{{ title }}</h1>
 <ul>
-  <li *ngFor="let stock of stocks">{{ stock.name }}</li>
+  <li *ngFor="let stock of stocks; index as i;"  [ngStyle]="{ 'color': i % 2 ? 'green': 'blue'}">{{ stock.name }}</li>
 </ul>
   

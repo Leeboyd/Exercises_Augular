@@ -3,9 +3,13 @@
   <h1 myHighlight>
     Welcome to {{ title }}!
   </h1>
-  <stock></stock>
-  <formNow></formNow>
-  <employee></employee>
+  <ul>
+    <li><a routerLink="/stock"> ngFor 練習</a></li>
+    <li><a routerLink="/employee"> interpolation pipe HTML </a></li>
+    <li><a routerLink="/binding"> momentjs binding</a></li>
+  </ul>
+  <!-- <stock></stock> -->
+  <router-outlet></router-outlet>
 </div>
 
 

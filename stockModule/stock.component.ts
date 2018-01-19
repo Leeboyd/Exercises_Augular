@@ -8,7 +8,7 @@ import { StockService } from '@app/Service/stock.service'
 })
 
 export class StockComponent {
-  title:string = 'List of Stock';
+  title: string = 'List of Stock';
   stocks
   constructor(stockService : StockService) {
     this.stocks = stockService.getStock()

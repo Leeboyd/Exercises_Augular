@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
-
+import { routing } from './app.routing'
 // Third-party
 
 // Component
@@ -32,7 +32,8 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    routing
   ],
   providers: [
     StockService

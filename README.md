@@ -2,7 +2,6 @@ Angular
 ===
 ![](https://camo.githubusercontent.com/4db7560202bd5a1f716427dd41ce81a98b3d2153/68747470733a2f2f7261776769742e636f6d2f6272696c6c6f75742f617765736f6d652d616e67756c61722d636f6d706f6e656e74732f6d61737465722f616e67756c61722d6c6f676f2e737667)
 
-
 ## 工具
 * [Angular-cli](https://github.com/angular/angular-cli?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe Silva and others at Angular Team
@@ -17,14 +16,12 @@ Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe
 * [Rangle's Angular 2 Training Book 原文](https://angular-2-training-book.rangle.io/handout/components/creating_components.html)
 
 ## TypeScript
-* [TypeScript Handbook（中文版)](https://www.gitbook.com/book/zhongsp/typescript-handbook/details)
-
+* [TypeScript Wiki](https://hackmd.io/s/Bk_bwp6EG)
 
 ## 實作教學
 * [使用Visual Studio Code開發Angular 2專案](https://www.ithome.com.tw/video/108442)
 
 * [Creating Desktop Applications With AngularJS and GitHub Electron](https://scotch.io/tutorials/creating-desktop-applications-with-angularjs-and-github-electron)
-
 
 ## 範例
 * [angular-webpack2-starter](https://github.com/qdouble/angular-webpack2-starter?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
@@ -41,7 +38,6 @@ Angular-realworld-example-app: Medium clone built with Angular 5+ [1263 stars on
 
 ## 疑難雜症
 * [問題彙整](https://hackmd.io/s/r1SqhB3Vz) 
-
 
 ## 古早教學
 * Will保哥簡介 Angular 2 Blog
