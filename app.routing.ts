@@ -4,6 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { StockComponent } from '@app/stockModule/stock.component';
 import { EmployeeComponent } from '@app/employeeModule/employee.component';
 import { BindingComponent } from '@app/bindingModule/binding.component';
+import { CribListingComponent } from '@app/cribModule/crib-listing.component';
 
 const appRoutes: Routes = [
   {
@@ -17,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'binding',
     component: BindingComponent
+  },
+  {
+    path: 'crib',
+    component: CribListingComponent
   }
 ]
 

@@ -5,6 +5,7 @@ Angular
 ## 工具
 * [Angular-cli](https://github.com/angular/angular-cli?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe Silva and others at Angular Team
+* [Angular 5 開發環境說明](https://gist.github.com/doggy8088/15e434b43992cf25a78700438743774a)
 
 * [用Angular CLI節省你的開發時間](https://dotblogs.com.tw/wellwind/2016/09/30/angular2-angular-cli)
 

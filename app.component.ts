@@ -14,11 +14,10 @@ export function ReadOnly(defaultValue) {
 })
 export class AppComponent {
   @ReadOnly('MABOW GATE')
-  comment: string
   title: string
   constructor() { }
   change (msg: string) {
     console.log(msg)
-    this.comment = 'NOTEST'
+    this.title = 'NOTEST'
   }
 }

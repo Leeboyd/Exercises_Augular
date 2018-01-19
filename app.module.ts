@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { StockComponent } from './stockModule/stock.component'
 import { BindingComponent } from './bindingModule/binding.component'
 import { EmployeeComponent } from './employeeModule/employee.component'
+import { CribListingComponent } from './cribModule/crib-listing.component';
 
 // Directive
 import { HighlightDirective } from './Directive/highlight.directive'
@@ -20,6 +21,7 @@ import { StockService } from './Service/stock.service';
 import { DateFormatterPipe } from './Pipe/date-formatter.pipe';
 import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +30,8 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
     EmployeeComponent,
     HighlightDirective,
     DateFormatterPipe,
-    EmployeeNamePipe
+    EmployeeNamePipe,
+    CribListingComponent
   ],
   imports: [
     BrowserModule,

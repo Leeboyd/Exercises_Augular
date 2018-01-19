@@ -1,0 +1,8 @@
+.demo-border {
+  margin:5% auto;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  padding:1em;
+  line-height:1.5em;
+  background:hsla(67, 95%, 95%, 1);
+  border:dotted 5px hsla(0, 95%, 35%, 1);
+}
