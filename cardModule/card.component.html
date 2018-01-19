@@ -1,0 +1,62 @@
+<div class="demo-border">
+    <figure>
+      <img src="assets/images/crib-2.jpg">
+    </figure>
+
+    <div>
+      <!-- ngIf 區塊1 -->
+      <div *ngIf="!house.showDetails">
+        <h4>
+          <span class="badge badge-pill badge-primary">
+            {{ house.type }}
+          </span>
+        </h4>
+        <h3>
+          <i class="fa fa-money" aria-hidden="true"></i>
+            {{ house.price | currency:'JPY':'symbol-narrow' }}
+        </h3>
+        <h4>
+          <i class="fa fa-home" aria-hidden="true"></i>
+            {{ house.address }}
+        </h4>
+  
+        <hr>
+  
+        <button 
+          class="btn btn-sm btn-success"
+          *ngIf="!house.showDetails"
+          (click)="house.showDetails = !house.showDetails">
+          Details
+        </button>
+  
+      </div>
+      <!-- ngIf 區塊2 -->
+      <div *ngIf="house.showDetails">
+        <div class="details">
+          <h4>
+            <span class="badge badge-info">
+              Beds: {{ house.bedrooms }}
+            </span>
+            <span class="badge badge-info">
+              Baths: {{ house.bathrooms }}
+            </span>
+            <span class="badge badge-info">
+              SqFt: {{ house.area }}
+            </span>
+          </h4>
+  
+          <p>{{ house.description }}</p>
+  
+          <hr>
+  
+          <button
+            class="btn btn-sm btn-danger"
+            (click)="house.showDetails = !house.showDetails">
+            Close
+          </button>
+  
+        </div>
+      </div>
+    </div>
+
+  </div>

@@ -9,7 +9,8 @@ import { AppComponent } from './app.component';
 import { StockComponent } from './stockModule/stock.component'
 import { BindingComponent } from './bindingModule/binding.component'
 import { EmployeeComponent } from './employeeModule/employee.component'
-import { CribListingComponent } from './cribModule/crib-listing.component';
+import { CribListingComponent } from './cribModule/crib-listing.component'
+import { CardComponent } from './cardModule/card.component'
 
 // Directive
 import { HighlightDirective } from './Directive/highlight.directive'
@@ -28,6 +29,7 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
     StockComponent,
     BindingComponent,
     EmployeeComponent,
+    CardComponent,
     HighlightDirective,
     DateFormatterPipe,
     EmployeeNamePipe,
@@ -35,7 +37,7 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule,
+    FormsModule,   
     routing
   ],
   providers: [
