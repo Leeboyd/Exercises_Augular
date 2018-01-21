@@ -20,4 +20,8 @@ export class BeerService{
     })
   }
 
+  api_postBeer (newKey: string, newName: string): Observable<any> {
+    return this.http.post("url", { name: newName, key: newKey })
+  }
+
 }

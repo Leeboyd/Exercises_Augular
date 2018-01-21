@@ -1,5 +1,10 @@
 <h1>{{ title }}</h1>
 <ul>
-  <li *ngFor="let stock of stocks; index as i;"  [ngStyle]="{ 'color': i % 2 ? 'green': 'blue'}">{{ stock.name }}</li>
+  <li *ngFor="let beer of beers"  [ngStyle]="{ 'color': beer.id % 2 ? 'green': 'blue'}">{{ beer.name }}</li>
 </ul>
+<!-- 一個抓值、一個雙向綁定 -->
+Beer Key: <input #newKey/>
+Beer Name: <input type="text" [(ngModel)]="newName" /> <span>{{ newName }}</span>
+
+<button class="btn btn-warning" (click)="postBeer(newKey.value)">沒用的按鈕</button>
   
