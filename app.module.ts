@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'
+import { HttpModule } from '@angular/http';
 import { routing } from './app.routing'
 // Third-party
 
@@ -17,6 +18,7 @@ import { HighlightDirective } from './Directive/highlight.directive'
 
 // Service
 import { StockService } from './Service/stock.service';
+import { BeerService } from './Service/beer.service';
 
 // Pipe
 import { DateFormatterPipe } from './Pipe/date-formatter.pipe';
@@ -38,10 +40,12 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
   imports: [
     BrowserModule,
     FormsModule,   
-    routing
+    routing,
+    HttpModule
   ],
   providers: [
-    StockService
+    StockService,
+    BeerService
   ],
   bootstrap: [AppComponent]
 })

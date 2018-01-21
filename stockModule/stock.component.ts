@@ -1,5 +1,5 @@
-import { Component } from '@angular/core'
-import { StockService } from '@app/Service/stock.service'
+import { Component, OnInit } from '@angular/core'
+import { BeerService } from '@app/Service/beer.service'
 
 @Component({
   selector: 'stock',
@@ -7,10 +7,23 @@ import { StockService } from '@app/Service/stock.service'
   styleUrls: ['./stock.component.css']
 })
 
-export class StockComponent {
+export class StockComponent implements OnInit {
   title: string = 'List of Stock';
-  stocks
-  constructor(stockService : StockService) {
-    this.stocks = stockService.getStock()
+  stocks: object[] = [{name: 'Edward'}, {name:'Paul'}, {name:'Holister'}];
+  constructor(private beerService : BeerService) {
+    
   }
+  ngOnInit () {
+    this.getBeer()
+  }
+
+  getBeer () {
+    this.beerService.api_getBeer()
+    .subscribe(
+      data => console.log(JSON.stringify(data)),
+      error => console.log(error)
+    )
+  }
+
+
 }
