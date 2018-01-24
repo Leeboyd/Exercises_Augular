@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { StockComponent } from './stockModule/stock.component'
 import { BindingComponent } from './bindingModule/binding.component'
 import { EmployeeComponent } from './employeeModule/employee.component'
+import { FormComponent } from './loginFormModule/loginForm.component'
 import { CribListingComponent } from './cribModule/crib-listing.component'
 import { CardComponent } from './cardModule/card.component'
 
@@ -32,6 +33,7 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
     BindingComponent,
     EmployeeComponent,
     CardComponent,
+    FormComponent,
     HighlightDirective,
     DateFormatterPipe,
     EmployeeNamePipe,
@@ -43,6 +45,7 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
     routing,
     HttpModule
   ],
+  // Provider - 告訴 Injector 如何創建一個依賴實例的架構譜。
   providers: [
     StockService,
     BeerService

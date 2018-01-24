@@ -1,0 +1,57 @@
+<div class="jumbotron">
+  <h2>Login Form</h2>
+  <form #form="ngForm" (ngSubmit)="submitForm(form.value)">
+    <div class="form-group">
+      <label>帳號：</label>
+      <input type="text" class="form-control" placeholder="請輸入帳號" 
+        ngModel name="account" required>
+    </div>
+
+    <div class="form-group">
+      <label>密碼：</label>
+      <input type="text" class="form-control" placeholder="請輸入密碼" 
+        ngModel name="password" required>
+    </div>
+
+    <div class="from-group">
+      <label>性別：</label>
+    </div>
+
+    <div class="radio">
+        <label>
+          <input type="radio" value="Male" 
+            ngModel name="gender">
+          男
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" value="Female"
+            ngModel name="gender">
+          女
+        </label>
+      </div>
+
+      <div class="form-group">
+        <label>Activities</label>
+      </div>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="hiking"
+          ngModel name="hiking"> 
+        Hiking
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="swimming"
+          ngModel name="swimming"> 
+        Swimming
+      </label>
+      <label class="checkbox-inline">
+        <input type="checkbox" value="running"
+          ngModel name="running"> 
+        Running
+      </label>
+      <div class="form-group">
+        <button type="submit" class="btn btn-default">送出</button>
+      </div>
+  </form>
+</div>
