@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing'
 // Third-party
@@ -10,7 +10,8 @@ import { AppComponent } from './app.component';
 import { StockComponent } from './stockModule/stock.component'
 import { BindingComponent } from './bindingModule/binding.component'
 import { EmployeeComponent } from './employeeModule/employee.component'
-import { FormComponent } from './loginFormModule/loginForm.component'
+// import { FormComponent } from './loginFormModule/loginForm.component'
+import { FormComponent } from './loginFormModule/complexForm.component'
 import { CribListingComponent } from './cribModule/crib-listing.component'
 import { CardComponent } from './cardModule/card.component'
 
@@ -41,7 +42,8 @@ import { EmployeeNamePipe } from './Pipe/employee-name.pipe';
   ],
   imports: [
     BrowserModule,
-    FormsModule,   
+    FormsModule,
+    ReactiveFormsModule,  
     routing,
     HttpModule
   ],

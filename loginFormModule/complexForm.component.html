@@ -1,0 +1,57 @@
+<div class="jumbotron">
+    <h2>Login Form</h2>
+    <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+      <div class="form-group">
+        <label>帳號：</label>
+        <input type="text" class="form-control" placeholder="請輸入帳號" 
+          [formControl]="complexForm.controls['account']" required>
+      </div>
+  
+      <div class="form-group">
+        <label>密碼：</label>
+        <input type="text" class="form-control" placeholder="請輸入密碼" 
+          [formControl]="complexForm.controls['password']" required>
+      </div>
+  
+      <div class="from-group">
+        <label>性別：</label>
+      </div>
+  
+      <div class="radio">
+          <label>
+            <input type="radio" value="Male" 
+              [formControl]="complexForm.controls['gender']" name="gender">
+            男
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" value="Female"
+              [formControl]="complexForm.controls['gender']" name="gender">
+            女
+          </label>
+        </div>
+  
+        <div class="form-group">
+          <label>Activities</label>
+        </div>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="hiking"
+            [formControl]="complexForm.controls['hiking']" name="hiking"> 
+          Hiking
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="swimming"
+            [formControl]="complexForm.controls['swimming']" name="swimming"> 
+          Swimming
+        </label>
+        <label class="checkbox-inline">
+          <input type="checkbox" value="running"
+            [formControl]="complexForm.controls['running']" name="running"> 
+          Running
+        </label>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">送出</button>
+        </div>
+    </form>
+  </div>
