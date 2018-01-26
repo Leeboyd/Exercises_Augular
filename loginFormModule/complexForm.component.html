@@ -35,23 +35,25 @@
         <div class="form-group">
           <label>Activities</label>
         </div>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="hiking"
-            [formControl]="complexForm.controls['hiking']" name="hiking"> 
-          Hiking
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="swimming"
-            [formControl]="complexForm.controls['swimming']" name="swimming"> 
-          Swimming
-        </label>
-        <label class="checkbox-inline">
-          <input type="checkbox" value="running"
-            [formControl]="complexForm.controls['running']" name="running"> 
-          Running
-        </label>
+        <!--ngFor checklist 使用 Formgroup -->
+        <!-- 綁定到單一屬性 [true, true, true] -->
+        <div *ngFor="let activity of activities.controls;let i=index">
+          <input type="checkbox"
+            [formControl]="activity"> 
+          {{ data.activities[i].name }}          
+        </div>
+
         <div class="form-group">
           <button type="submit" class="btn btn-default">送出</button>
         </div>
     </form>
+
+    <!--ngFor checklist 不使用 Formgroup -->
+    <label class="checkbox-inline" *ngFor="let a of acc">
+      <input type="checkbox" [value]="a.selected"
+        [(ngModel)]="a.selected"> 
+        {{ a.name }}
+      </label>
+      <pre>{{ acc | json }}</pre>
+    <button type="button" class="btn btn-default" (click)="test()">直接綁定</button>
   </div>
