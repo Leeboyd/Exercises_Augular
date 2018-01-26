@@ -10,8 +10,9 @@ import { AppComponent } from './app.component';
 import { StockComponent } from './stockModule/stock.component'
 import { BindingComponent } from './bindingModule/binding.component'
 import { EmployeeComponent } from './employeeModule/employee.component'
-// import { FormComponent } from './loginFormModule/loginForm.component'
-import { FormComponent } from './loginFormModule/complexForm.component'
+// import { FormComponent } from './loginFormModule/simpleForm.component'
+// import { FormComponent } from './loginFormModule/complexForm.component'
+import { FormComponent } from './loginFormModule/validateForm.component'
 import { CribListingComponent } from './cribModule/crib-listing.component'
 import { CardComponent } from './cardModule/card.component'
 

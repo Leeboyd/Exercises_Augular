@@ -1,0 +1,69 @@
+<div class="jumbotron">
+    <h2>Login Form</h2>
+    <form [formGroup]="complexForm" (ngSubmit)="submitForm(complexForm.value)">
+      <div class="form-group"
+        [ngClass]="{'has-error':!complexForm.controls['account'].valid && complexForm.controls['account'].touched}">
+        <label>帳號：</label>
+        <input type="text" class="form-control" placeholder="請輸入帳號" 
+          [formControl]="complexForm.controls['account']" required>
+        <div *ngIf="complexForm.controls['account'].errors && (complexForm.controls['account'].dirty || complexForm.controls['account'].touched)" 
+          class="alert alert-danger">You must include a account.</div>
+      </div>
+  
+      <div class="form-group"
+        [ngClass]="{'has-error':!complexForm.controls['password'].valid && complexForm.controls['password'].touched}">
+        <label>密碼：</label>
+        <input type="text" class="form-control" placeholder="請輸入密碼" 
+          [formControl]="complexForm.controls['password']" required>
+        <div *ngIf="complexForm.controls['password'].errors && (complexForm.controls['password'].dirty || complexForm.controls['password'].touched)" class="alert alert-danger">請填寫正確的密碼</div>
+      </div>
+
+      <!-- 也可以做細一點 -->
+      <!-- <div *ngIf="complexForm.controls['lastName'].hasError('required') && complexForm.controls['password'].touched" class="alert alert-danger">You must include a last name.</div>
+      <div *ngIf="complexForm.controls['lastName'].hasError('minlength') && complexForm.controls['password'].touched" class="alert alert-danger">Your last name must be at least 5 characters long.</div>
+      <div *ngIf="complexForm.controls['lastName'].hasError('maxlength') && complexForm.controls['password'].touched" class="alert alert-danger">Your last name cannot exceed 10 characters.</div> -->
+
+      <div class="from-group">
+        <label>性別：</label>
+      </div>
+  
+      <div class="radio">
+          <label>
+            <input type="radio" value="Male" 
+              [formControl]="complexForm.controls['gender']" name="gender">
+            男
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" value="Female"
+              [formControl]="complexForm.controls['gender']" name="gender">
+            女
+          </label>
+        </div>
+  
+        <div class="form-group">
+          <label>Activities</label>
+        </div>
+        <!--ngFor checklist 使用 Formgroup -->
+        <!-- 綁定到單一屬性 [true, true, true] -->
+        <div *ngFor="let activity of activities.controls;let i=index">
+          <input type="checkbox"
+            [formControl]="activity"> 
+          {{ data.activities[i].name }}          
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">送出</button>
+        </div>
+    </form>
+
+    <!--ngFor checklist 不使用 Formgroup -->
+    <label class="checkbox-inline" *ngFor="let a of acc">
+      <input type="checkbox" [value]="a.selected"
+        [(ngModel)]="a.selected"> 
+        {{ a.name }}
+      </label>
+      <pre>{{ acc | json }}</pre>
+    <button type="button" class="btn btn-default" (click)="test()">直接綁定</button>
+  </div>

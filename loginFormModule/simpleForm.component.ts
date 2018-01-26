@@ -2,8 +2,7 @@ import { Component } from '@angular/core'
 
 @Component({
   selector: 'simple-form',
-  templateUrl: './simpleForm.component.html',
-  // styleUrls: ['./stock.component.css']
+  templateUrl: './simpleForm.component.html'
 })
 
 export class FormComponent {
