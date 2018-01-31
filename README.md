@@ -2,6 +2,12 @@ Angular
 ===
 ![](https://camo.githubusercontent.com/4db7560202bd5a1f716427dd41ce81a98b3d2153/68747470733a2f2f7261776769742e636f6d2f6272696c6c6f75742f617765736f6d652d616e67756c61722d636f6d706f6e656e74732f6d61737465722f616e67756c61722d6c6f676f2e737667)
 
+## 系列部落格
+* Posts About Angular
+[鱷魚](https://alligator.io/angular/) 
+* [Angular Material完全攻略系列](https://ithelp.ithome.com.tw/users/20020617/ironman/1263)
+* [Angular 2 之 30 天邁向神乎其技之路系列](https://ithelp.ithome.com.tw/users/20103745/ironman/1160)
+
 ## 工具
 * [Angular-cli](https://github.com/angular/angular-cli?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe Silva and others at Angular Team
@@ -11,6 +17,8 @@ Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe
 
 * 官網
 [Helloworld APP](https://angular.io/guide/quickstart)
+* 官網 (中文)
+[官方文档](https://angular.cn/docs)
 
 ## 電子書
 * [Rangle's Angular 2 Training Book](https://zhangchen915.gitbooks.io/angular2-training/)
