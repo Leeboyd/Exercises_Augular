@@ -39,6 +39,8 @@ A complete Angular 5 and Webpack 3 starter seed with minimal and full featured b
 * [Angular-realworld-example-app](https://github.com/gothinkster/angular-realworld-example-app?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 Angular-realworld-example-app: Medium clone built with Angular 5+ [1263 stars on Github]. Courtesy of Eric Simons
 
+## 狀態管理
+* [Managing State in Angular with ngrx/store](https://auth0.com/blog/managing-state-in-angular-with-ngrx-store/)
 
 ## layout
 
