@@ -27,6 +27,9 @@ Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe
 ## TypeScript
 * [TypeScript Wiki](https://hackmd.io/s/Bk_bwp6EG)
 
+## RxJs
+* [希望是最淺顯易懂的 RxJS 教學](https://blog.techbridge.cc/2017/12/08/rxjs/)
+
 ## 實作教學
 * [使用Visual Studio Code開發Angular 2專案](https://www.ithome.com.tw/video/108442)
 
@@ -43,7 +46,6 @@ Angular-realworld-example-app: Medium clone built with Angular 5+ [1263 stars on
 * [Managing State in Angular with ngrx/store](https://auth0.com/blog/managing-state-in-angular-with-ngrx-store/)
 
 ## layout
-
 * [Flex-layout (v.2.0)](https://github.com/angular/flex-layout?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 * Flex-layout (v.2.0): Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API [2074 stars on Github]. Courtesy of Thomas 
 
