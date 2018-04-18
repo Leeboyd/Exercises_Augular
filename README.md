@@ -4,10 +4,13 @@ Angular
 
 ## 系列部落格
 * Posts About Angular
-[鱷魚](https://alligator.io/angular/) 
+* [鱷魚](https://alligator.io/angular/) 
 * [Angular Material完全攻略系列](https://ithelp.ithome.com.tw/users/20020617/ironman/1263)
 * [Angular 2 之 30 天邁向神乎其技之路系列](https://ithelp.ithome.com.tw/users/20103745/ironman/1160)
 
+## 好棒棒列表
+* [GitHub - gdi2290/awesome-angular: A curated list of awesome Angular resources by @TipeIO](https://github.com/gdi2290/awesome-angular)
+* [GitHub - brillout/awesome-angular-components: Catalog of Angular 2+ Components & Libraries](https://github.com/brillout/awesome-angular-components)
 ## 工具
 * [Angular-cli](https://github.com/angular/angular-cli?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
 Angular-cli v1: CLI tool for Angular [14823 stars on Github]. Courtesy of Filipe Silva and others at Angular Team
@@ -45,9 +48,10 @@ Angular-realworld-example-app: Medium clone built with Angular 5+ [1263 stars on
 ## 狀態管理
 * [Managing State in Angular with ngrx/store](https://auth0.com/blog/managing-state-in-angular-with-ngrx-store/)
 
-## layout
+## UI Component
 * [Flex-layout (v.2.0)](https://github.com/angular/flex-layout?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more)
-* Flex-layout (v.2.0): Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API [2074 stars on Github]. Courtesy of Thomas 
+* Flex-layout (v.2.0): Provides HTML UI layout for Angular applications; using Flexbox and a Responsive API [2074 stars on Github]. Courtesy of Thomas
+* [11 Angular Component Libraries You Should Know In 2018](https://blog.bitsrc.io/11-angular-component-libraries-you-should-know-in-2018-e9f9c9d544ff)
 
 ## 疑難雜症
 * [問題彙整](https://hackmd.io/s/r1SqhB3Vz) 
